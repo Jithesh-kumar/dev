@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: darkorange;
+    }
+    #message {
+      font-size: 24px;
+      margin-top: 20px;
+      text-shadow: 5cap;
+      text-decoration-color: aqua;
+    }
+    #changeButton {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Simple Website Example</h1>
+  <p id="message">Hello, World!</p>
+  <button id="changeButton">Change Message</button>
+
+  <script>
+    const messageElement = document.getElementById("message");
+    const changeButton = document.getElementById("changeButton");
+
+    changeButton.addEventListener("click", () => {
+      const newMessage = prompt("Enter a new message:");
+      if (newMessage) {
+        messageElement.textContent = newMessage;
+      }
+    });
+  </script>
+</body>
+</html>

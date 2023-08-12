@@ -1,18 +1,404 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h2>Javascript</h2>
-    <p id ="demo"> A pragraph</p>
-    <button type="button" onclick="myFunction()">try its</button>
+<html>
+  <body>
+    <h1>My First Web Page</h1>
+    <p>My First Paragraph</p>
+
+    <p id="demo">please visit Microsoft!</p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <!-- <input id="age" value="" /> -->
+    <!-- <button onclick="myFunction()">Check it</button> -->
+    <p id="demo9"></p>
+
     <script>
-        function myFunction(){
-            document.getElementById("demo").innerHTML="Paragraph changed.";
-        }
+      //document.getElementById("demo").innerHTML = 5 + 6;
+      //document.write(5-6);
+      //window.alert(8+1);
+      //alert(9+8);
+      //console.log(6-9);
+      /*let x,y,z;
+x=2;
+y=4;
+z=x+y;
+document.getElementById("demo").innerHTML="The value of z is "+ z +" . ";*/
+      /*var 
+firstName= "John",lastName = "Doe",age= 35;*/
+      //let car ="fiat";
+      //document.getElementById("demo").innerHTML=car;
+      /*function displayDate(){
+    document.getElementById("demo").innerHTML=Date();
+}*/
+      /*<!--let text1='Jithesh';
+let text2="Shashank";
+let text3="Accelerlab 'Solutions'";
+let text4=new String("Kumar");
+let text="Java,Python,React";
+//let part = text.slice(5,12);
+//let x =text1.length;
+//alert(x);
+//document.getElementById("demo").innerHTML=text3.length;
+document.getElementById("demo").innerHTML=text.substring(-4);*/
+      /*function myFunction(){
+    let text=document.getElementById("demo").innerHTML;
+    document.getElementById("demo").innerHTML=text.toLowerCase();
+}*/
+
+      //   const fruits = ["Banana", "Orange", "Apple", "Lime", "Mango"];
+      //   const flower = ["Lily", "Rose", "Iris", "Dahlia"];
+      //   const name = ["Cecilie", "Lone"];
+
+      //const group=fruits.concat("Lemom");
+      //fruits[0]="Lime";
+      //const person={firstname:"John", lastname:"Doe",age:46};
+      //let size=fruits.length;
+      /*let text="<ul>";
+    fruits.forEach(myFunction);
+    text +="</ul>";
+    for(let i=0; i<size;i++){
+        text+="<li>"+fruits[i]+"</li>";
+    }
+    text +="</ul>";*/
+      //document.getElementById("demo").innerHTML=fruits.join("</br>");
+      /*function myFunction(){
+    fruits.push("Lemon");
+    document.getElementById("demo").innerHTML=fruits;
+}*/
+      //document.getElementById("demo").innerHTML=fruits;
+      //fruits.splice(0,2,"range","gang");
+      //const sli =fruits.slice(3);
+      //document.getElementById("demo").innerHTML=fruits +"<br><br>"+ sli;
+      //fruits.unshift("GreenApple");
+      //delete fruits[1];
+      //   const points = [10, 60, 7, 6, 12, 78, 54, 34];
+
+      //   document.getElementById("demo").innerHTML = points;
+      //   function myFunction1() {
+      //     points.sort();
+      //     document.getElementById("demo").innerHTML = points;
+      //   }
+      //   function myFunction2() {
+      //     points.sort(function (a, b) {
+      //       return a - b;
+      //     });
+      //     document.getElementById("demo").innerHTML = points;
+      //   }
+
+      //points.sort(function(a,b){return a-b});
+      //points.sort(function(a,b){return b-a});
+      //document.getElementById("demo2").innerHTML=points;
     </script>
-</body>
+    <script>
+      // //   const points1 = [10, 50, 8, 89, 7, 20];
+      // //   const points2 = points1.map(fun1);
+      // //   document.getElementById("demo").innerHTML = points2;
+      // //   function fun1(value) {
+      // //     // points1.sort(function(){return 0.5-Math.random()});
+      // //     //document.getElementById("demo").innerHTML=points1;
+      // //     return value * 2;
+      //   }
+      //points1.sort(function(a,b){return a-b});
+      //documents.getElementById("demo").innerHTML=points1[0];
+    </script>
+    <!-- <p>The lowest number is <span id ="demo"></span></p> -->
+
+    <button onclick="fun1()">Try It</button>
+    <!-- <button onclick="myFunction2()" >Sort Numerically</button> -->
+    <!-- <button onclick="window.print()">Print this page</button> -->
+
+    <script>
+      /*  const numbers=[10,32,5,8,4];
+             let sum=numbers.reduceRight(fun);
+             document.getElementById.innerHTML="The sum is " + sum;
+             function fun(total,value,index,array){
+                 return total+value;
+
+             }*/
+      //const d =new Date(2002,4,29,8,45,78);
+      //const d = new Date(2018);
+      //document.getElementById("demo").innerHTML=d.getMonth();//toISOString();//toUTCString();//toDateString();
+      //document.getElementById("demo2").innerHTML=
+      /*"<p>Math.E:"+Math.E+"</p>"+
+             "<p>Math.LN10:"+Math.LN10+"</p>"+
+             "<p>Math.PI:"+Math.PI+"</p>"
+             +"<p>Math.round:"+Math.round(4.2)+"</p>"+
+             "<o>Math.ceil:"+Math.ceil(5.8)+"</p>"+
+             "<p>Math.trunc:"+Math.trunc(5.7)+"</p>"+
+             "<p>Math.sign:"+Math.sign(8)+"</p>"+
+            "<p>Math.pow:"+Math.pow(8,3)+"</p>"+
+            "<p>Math.sqr:"+Math.sqrt(64)+"</p>"+
+            "<p>Math.abs:"+Math.abs(-9.3)+"</p>"*/
+      //"The sine value of 90 degrees is:"+ Math.sin(90*Math.PI/180);
+      //Math.log10(1000);
+      //Math.floor(Math.random()*10);
+
+      /*const minute=1000*60;
+             const hour=minute*30;
+             const day=hour*24
+             const year=day*365;
+             let years = Math.round(Date.now() / year);
+             document.getElementById("demo").innerHTML = years;*/
+      /*function getRandInteger(min,max){
+                 return Math.floor(Math.random()*(max-min+1))+min;
+             }*/
+      //document.getElementById("demo").innerHTML=Boolean(10>9);
+      //document.getElementById("demo").innerHTML=10<9;
+      //let x = 3;
+      //let y = 3;
+      //document.getElementById("demo").innerHTML=!(x==y)+"<br>"+!(x>y)
+      //document.getElementById("demo").innerHTML=(x<10 || y>1)+"<br>"+
+      //(x<11 || y<5);
+
+      // document.getElementById("demo").innerHTML=(x>=9);
+      //   function myFunction() {
+      //     let voteable;
+      //     let age = Number(document.getElementById("age").value);
+      //     if (isNaN(age)) {
+      //       voteable = "Input is not a number";
+      //     } else {
+      //       voteable = age < 18 ? "Too Young" : "Old enough";
+      //     }
+      //     document.getElementById("demo").innerHTML = voteable + "to vote";
+      //   }
+      // const hour=new Date().getHours();
+      // let greeting;
+      // if (hour < 18){
+      //    greeting="Good Morning";
+      // }
+      // else if(hour>10){
+      //     greeting="Good day";
+      // }
+      // else{
+      //     greeting="Good evening";
+      // }
+      // document.getElementById("demo").innerHTML=greeting;
+      //   let day = new Date().getDay() + 2;
+      //   switch (day) {
+      //     case 0:
+      //       day = "Sunday";
+      //       break;
+      //     case 1:
+      //       day = "Mon";
+      //       break;
+      //     case 2:
+      //       day = "Tue";
+      //       break;
+      //     case 3:
+      //       day = "Wed";
+      //       break;
+      //     case 4:
+      //       day = "Thu";
+      //       break;
+      //     case 5:
+      //       day = "Fri";
+      //       break;
+      //     case 6:
+      //       day = "Sat";
+      //     default:
+      //       day = "Good day";
+      //   }
+      //   document.getElementById("demo").innerHTML = "Today is " + day;
+      // const cars =["BMW","Raptor","Volvo","Ritz"];
+      // let text;
+      // let n = cars.length;
+      // for (let i=0;i<n;i++){
+      //     text +=cars[i]+"<br>";
+      // }
+      // documet.getElementById("demo9").innerHTML=text;
+
+      //     let i, len, text;
+      // for (i = 0, len = cars.length, text = ""; i < len; i++) {
+      //   text += cars[i] + "<br>";
+      // }
+      // document.getElementById("demo").innerHTML = text;
+      //
+      //   const cars = ["BMW", "Volvo", "Saab", "Ford"];
+      //   let i;
+      //   let len =cars.length;
+      //   let text = "";
+      //   for (i = 0; i < len; i++) {
+      //     text += cars[i] + "<br>";
+      //}
+      // let i=5;
+      // for(let i =0;i<10;i++){
+
+      // }
+      //   document.getElementById("demo").innerHTML = i;
+      // let text=""
+      // let i=0;
+      // do{
+      //     text+="<br> The mumber is"+i;
+      //     i++;
+      // }
+      // while(i<10);
+      // let text ="";
+      // for (let i=0; i<10;i++){
+      //     if (i==3){continue;}
+      //     text+="The number is "+i+"<br>";
+      // }
+      // document.getElementById("demo").innerHTML=text;
+      // const cars=["BMW","Volvo","Saab","Ford"];
+      // let text="";
+      // list:{
+      //     text+=cars[0]+"<br>";
+      //     text+=cars[1]+"<br>";
+      //     break list;
+      //     text+=cars[2]+"<br>";
+      //     text+=cars[3]+"<br>";
+      // }
+      // const name="Accelerlab";
+      // let text=""
+      // for(const x of name){
+      //     text +=x+"<br>";
+      // }
+      // const letters=new Set (["a","b","c"]);
+      // let text ="";
+      // for (const x of letters){
+      //     text+=x+"<br>";
+      // }
+      // document.getElementById("demo").innerHTML=text;
+      // const fruits =new Map([
+      //     ["apples",400],
+      //     ["bananas",300],
+      //     ["oranges",700]
+      // ]);s
+      // let text="";
+      // for(const x of fruits){
+      //     text+=x+"<br>";
+      // }
+      // const letters=new Set();
+      // const a="a";
+      // const b="b";
+      // const c="c";s
+      // //sconst d="d";
+      // letters.add(a);
+      // letters.add(b);
+      // letters.add(c);
+      // //letters.add(d);
+      // document.getElementById("demo").innerHTML=letters.size;
+      // const fruits =new Map([
+      //     ["apples",500],["bananas",300],["oranges",200]
+      // ]);
+      // document.getElementById("demo").innerHTML="<br>"+"Jhon".constructor+"</br>"
+      // +"<br>"+(3.13).constructor+"</br>"+"<br>"+ function(){}.constructor+"</br>"+
+      // "<br>"+typeof [1,2,3,4]+"</br"
+      //  document.getElementById("demo").innerHTML=
+      //  typeof undefined+"<br>"+
+      //  typeof null+"<br><br>"+
+      //  (null==undefined)+"<br>"+ß
+      //  (null=undefined);
+      // let text="Visit   Accelerlab!";
+      // //let n=text.search(/accelerlab/i);
+      // //const pattern =/i/;
+
+      // let n =text.replace(/visit/i,"Welcome to")
+      // document.getElementById("demo").innerHTML=n+"<br>"+/w/i.exec(n)///i.test(n);
+      // try{
+      //   aalert("Welcome To Accelerlab");
+      // }  s
+      // catch(err){
+      //   document.getElementById("demo").innerHTML=err.message;
+      // }
+      // myFunction();
+      // document.getElementById("demo").innerHTML="I can Disply"+carName;
+      // function myFunction(){
+      //   carName="Volvo";
+      // }
+      // let carname ="Volvo";
+      // document.getElementById("demo").innerHTML="I can not display:"+window.carName;
+      // "use strict";
+      // function myFunction() {
+      //   alert(this);
+      // }
+      // myFunction();
+      // let myFunction=(a,b)=>a*b;
+      // document.getElementById("demo").innerHTML=myFunction(4,5);
+      // class Car{
+      //   constructor(name,year){
+      //     this.name=name;
+      //     this.year=year;
+      //   }
+      //   age(){
+      //     const date=new Date();
+      //     return date.getFullYear()-this.year;
+      //   }
+      // }
+      // const myCar=new Car("Ford",2020);
+      // //const myCar2=new Car("Audi",2019);
+      // // document.getElementById("demo").innerHTML=myCar1.name+" "+myCar1.year+""+" "+"<br>"+
+      // // myCar2.name+""+" "+myCar2.year+"";
+      // document.getElementById("demo").innerHTML="My car is"+myCar.age()+"years old";
+      // import {name,age} from "./demo.js";
+      // let text="My name is "+name +", I am "+age+".";
+      // document.getElementById("demo").innerHTML=text;
+      // console.log(window.location.pathname);
+      // console.log(window.location.hostname);
+      //   let text =
+      //     '{"employees":[' +
+      //     '{"firstName":"John","lastName":"Doe" },' +
+      //     '{"firstName":"Anna","lastName":"Smith" },' +
+      //     '{"firstName":"Peter","lastName":"Jones" }]}';
+
+      //   const obj = JSON.parse(text);
+      //   document.getElementById("demo").innerHTML =
+      //     obj.employees[1].firstName + " " + obj.employees[1].lastName;
+      // let x= 15*3;
+      // debugger;
+      // document.getElementById("demo").innerHTML=x;
+      // function greet() {
+      //   console.log("Hello world");
+      // }
+
+      function sayName(name) {
+       console.log("Hello" + " " + name);
+      }
+
+      // setTimeout(greet, 2000);
+      // sayName("John");
+      // function greet(name, myFunction) {
+      //   console.log("Hello world");
+
+      //   myFunction(name);
+      // }
+      // function sayName(name) {
+      //   console.log("Hello" + " " + name);
+      // }
+      // setTimeout(greet, 2000, "John", sayName);
+      // function myDisplayer(something) {
+      //   document.getElementById("demo").innerHTML = something;
+      // }
+
+      // function myCalculator(num1, num2, myCallback) {
+      //   let sum = num1 + num2;
+      //   myCallback(sum);
+      // }
+
+      // myCalculator(5, 5, myDisplayer);
+      // setTimeout(myFunctiosn,3000);
+      // function myFunction(){
+      //   document.getElementById("demo").innerHTML="Hii good Evening"
+      // }
+      // f
+      async function myDisplay(){
+      let myPromise=new Promise(function(resolve,reject){
+        resolve("Hii good Morning");
+      });
+      document.getElementById("demo").innerHTML=await myPromise;
+    }
+    myDisplay();
+    </script>
+    <!-- <div onmouseover="this.style.backgroundColor='oranges'">myDIV.</div> -->
+
+    <!--   
+    <p>
+      <a href="javascript:void(document.body.style.backgroundColor='white');">Useless link</a>
+    </p>
+    <button><a href="javascript:void(document.body.style.backgroundColor='orange');">
+      Click to change backgroundColor</a></button> -->
+    <!-- <button    
+      onclick="document.getElementById('demo2').innerHTML=getRandInteger(1,10)"
+    > 
+      Click
+    </button>-->
+  </body>
 </html>
